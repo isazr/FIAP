@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE Home</title>
+    <link rel="stylesheet" href="./css/style-cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body class="">
+  <nav class="bg-success navbar navbar-dark sticky-top  flex-md-nowrap ">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0 bg-success" href="#">Health Track</a>   
+    <ul class="navbar-nav px-3 bg-success">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="dashboard.html">Voltar</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/images/logo.jpg" alt="" width="310" height="128">
+      <h2>Cadastro de Exercício</h2>
+    </div>
+
+    <div>
+      <div class="container fix border " id="cadastroref">
+         
+        <h3>Nesse formulário você pode cadastrar seu exercício:</h3>
+      
+    
+          <form class="dados">
+            <div class="col-md-4 mb-3">
+              <label for="refeicao">Tipo de Exercício</label>
+              <input type="text" class="form-control" id="comida" placeholder="" value="" required="">
+            </div>
+                       
+            
+              <div class="col-md-6 mb-3">
+                  <label for="nascimento">Data</label>
+                  <input type="date" class="form-control" id="dataref" required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="nascimento">Tempo de Exercício</label>
+                <input type="text" class="form-control" id="comida" placeholder="Escreva em minutos" value="" required="">
+            </div>
+             
+
+              <div class="campo btn-submit">
+                  <button type="submit" class="confirmar bg-primary text-white w-25 border border-secondary rounded shadow ml-5 mb-4">Confirmar</button>
+              </div>
+            
+          </form>
+
+          <table id="resumo" class="table table-success table-striped">
+              <thead>
+                  <tr>
+                      <th class="th scope">Data</th>
+                      <th class="th scope"></th>
+                      <th class="th scope">Tipo de Exercício</th>
+                      <th class="th scope">Tempo de Exercício</th>  
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">07/06/2021</th>
+                  <td></td>
+                  <td>Musculação</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <th scope="row">28/05/2021</th>
+                  <td></td>
+                  <td>Aeróbico</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <th scope="row">12/05/2021</th>
+                  <td></td>
+                  <td>Muay Thai</td>
+                  <td>45</td>
+                </tr>
+              </tbody>
+            </table>                       
+              
+          </table>
+      </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
